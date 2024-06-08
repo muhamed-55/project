@@ -1,0 +1,577 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #44370a;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    ;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(85, 78, 38);
+    letter-spacing: 3px;
+    /* Add letter spacing */
+}
+
+.logo img {
+    width: 250px;
+    /* Adjust size as needed */
+    height: auto;
+    margin-left: 20px;
+}
+
+nav {
+    overflow: hidden;
+    /* Ensure overflow behavior */
+}
+
+nav a {
+    display: inline-block;
+    /* Display links inline */
+    padding: 10px 20px;
+    /* Add padding to links */
+    margin-right: 40px;
+    /* Add space between links */
+    background-color: #d6b831;
+    /* Background color */
+    border: 3px solid #ffffff;
+    /* Border */
+    border-radius: 15px;
+    /* Rounded corners */
+    text-decoration: solid;
+    /* Remove underline */
+    color: #0c0c0c;
+    /* Text color */
+}
+
+nav a:hover {
+    background-color: #181818;
+    /* Change background color on hover */
+}
+
+nav a:hover {
+    color: #d1ce1a;
+    /* Change text color on hover */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section {
+    position: relative;
+    padding: 50px;
+    margin-bottom: 80px;
+    margin-top: 80px;
+    /* Add margin between sections */
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    z-index: -2;
+    border-radius: 100px;
+    border: 3px solid #e5e5e5;
+    box-shadow: 0 2px 4px rgba(134, 122, 50, 0.2);
+    /* display: none; */
+}
+
+.container h2 {
+    text-align: center;
+}
+
+#vision p,
+#mission p {
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #3f3b2b;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 35%;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0.1, 0.1, 0.1, 0.2);
+    margin-right: 25px;
+}
+
+/* Events section styling */
+.events {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+
+.events .container {
+    text-align: center;
+}
+
+.contact h2,
+.events h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.events h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact p,
+.events p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Announcements section styling */
+.announcement {
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0.1, 0.2, 0.3, 0.4);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.announcement h3 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.announcement p {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #6e6d31;
+}
+
+/* News and Events section styling */
+.news {
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0.1, 0.2, 0.3, 0.4);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.news h3 {
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.news p {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #706a37;
+}
+
+/* Special Offers section styling */
+.special-offers {
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0.1, 0.2, 0.3, 0.4);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.special-offers h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.special-offers p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+    color: #706a37;
+    font-weight: 700;
+}
+
+/* FAQs section styling */
+.faqs {
+    background-color: #fff;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0.1, 0.2, 0.3, 0.4);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.faqs .container {
+    text-align: center;
+}
+
+.faqs h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Styling for questions */
+.question {
+    padding: 20px 0;
+    border-bottom: 2px solid #86852c;
+    /* Gray border between questions */
+}
+
+.question h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Styling for answers */
+.answer {
+    padding: 20px 0;
+    margin-bottom: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #837d2e;
+}
+
+.answer p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Booking form styling */
+#booking {
+    padding: 50px 0;
+}
+
+#booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #224923;
+    color: white;
+    padding: 14px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #aca439;
+}
+
+/* Room and Suite styling */
+#rooms-suites .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.room {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.room h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.room p {
+    margin-bottom: 15px;
+    color: #252525;
+}
+
+.room ul {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    color: #3b3b3b;
+}
+
+.room img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#dining.section::before {
+    display: none;
+    /* Remove the ::before pseudo-element */
+}
+
+/* Dining styling */
+#dining .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(950px, 1fr));
+    gap: 40px;
+}
+
+.dining-option {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0.2, 0.2, 0.2, 0.2);
+    overflow: hidden;
+    /* Ensure that the container wraps around floated image */
+}
+
+.dining-option img {
+    float: left;
+    margin-right: 20px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+.dining-option .details {
+    overflow: hidden;
+    /* Clear floated elements */
+}
+
+.dining-option h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    margin-top: 0;
+    color: #333;
+}
+
+.dining-option p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Activities styling */
+#activities .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.activity {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+#activities h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    /* Change font family */
+}
+
+.activity h3 {
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    color: #333;
+}
+
+.activity ul {
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.activity li {
+    color: #94852f;
+}
+
+/* Hotel Services styling */
+#hotel-services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0.2, 0.2, 0.2, 0.2);
+}
+
+.service h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.service p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #94852f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact {
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0.2, 0.2, 0.2, 0.2);
+    border: 1px solid;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contact h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #252222;
+}
+
+.contact p {
+    text-align: center;
+    margin: 0;
+    color: #ad9528;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.inputControl {
+    margin-bottom: 20px;
+}
+
+.inputControl input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #a79d1d;
+    font-size: 16px;
+}
+
+.inputControl .error {
+    color: red;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #a09e20;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #46470b;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    color: rgb(194, 185, 64);
+    font-weight: bold;
+}
+
+.map-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.map-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 500px;
+    border: 0;
+    border-radius: 10px;
+}
